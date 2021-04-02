@@ -94,3 +94,27 @@ set expandtab
 colors desert
 
 set cursorline
+
+"====================== for plugin to install plugin ======================"
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle.."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    let iCanHazVundle=0
+endif
+
+filetype off                  " required
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tomtom/tcomment_vim'
+
+filetype on
+
+"====================== for tcomtent_vim ======================"
+nmap ,/ :TComment<Cr>
+vmap ,/ :TComment<Cr>

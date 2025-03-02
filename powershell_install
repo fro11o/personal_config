@@ -1,0 +1,8 @@
+# Install via winget
+winget install Git.Git
+winget install vim.vim
+
+# Setting PATH
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\bin\", "Machine")
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Vim\vim91\", "Machine")
+

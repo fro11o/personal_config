@@ -9,11 +9,11 @@ fi
 if [ -f "$HOME/.vimrc" ]; then
     echo "$HOME/.vimrc exists!";
 else
-    cp ./vimrc ~/.vimrc
+    cp ./vim_rc ~/.vimrc
 fi
 
 if [ -f "$HOME/.bashrc" ]; then
-    cat ./bashrc >> $HOME/.bashrc
+    cat ./bash_rc >> $HOME/.bashrc
 else
     echo "$HOME/.bashrc not exist!";
 fi

@@ -3,10 +3,11 @@
 ## Note
 Before copy these config, make sure if there is already one config there!!
 ## bash
-* Copy bashrc to $HOME/.bashrc
+* Copy bash_rc to $HOME/.bashrc
 ## powershell
-* Copy powershellrc to C:\Users\<username>\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+* Copy powershell_rc to C:\Users\<username>\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+* Follow powershell_install to install needed package
 ## tmux config
-* Copy tmux to ~/.tmux.conf
+* Copy tmux_conf to ~/.tmux.conf
 ## vim
-* Copy vimrc to ~/.vimrc
+* Copy vim_rc to ~/.vimrc
